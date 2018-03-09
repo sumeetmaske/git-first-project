@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sovimal.cricket.controllers.Controller">
+   <ImageView fx:id="img">
+      <Image url="home.jpg" />
+   </ImageView>
+
+   <top>
+
+      <MenuBar fx:id="menubar">
+
+         <menus>
+
+            <Menu mnemonicParsing="false"  text="System">
+               <MenuItem onAction="#showAuthenticationDialog" style="-fx-text-fill: black; -fx-font-size: 18" text="UserAdminstration" />
+               <!--<SeparatorMenuItem />-->
+               <MenuItem style=" -fx-font-size: 18" text="Log Off" />
+               <!--<SeparatorMenuItem />-->
+               <MenuItem style="-fx-font-size: 18" text="Exit" />
+            </Menu>
+
+            <Menu mnemonicParsing="false" text="Entry">
+               <MenuItem style="-fx-font-size: 18" text="Client Master           F1"
+                  onAction="#showClientandParties"/>
+               <!--<SeparatorMenuItem />-->
+               <MenuItem onAction="#showCreateNeaMatch" style="-fx-font-size: 18" text="Create Match           F2" />
+               <!--<SeparatorMenuItem />-->
+               <MenuItem style="-fx-font-size: 18" text="Partners" />
+               <!--<SeparatorMenuItem />-->
+               <MenuItem style="-fx-font-size: 18" text="New Party" />
+            </Menu>
+
+            <Menu mnemonicParsing="false" text="Goto">
+               <MenuItem style="-fx-font-size: 18" text="Current Match"  onAction="#matches"/>
+               <MenuItem style="-fx-font-size: 18" text="Current Fency" />
+               <MenuItem style="-fx-font-size: 18" text="Current Session" />
+            </Menu>
+
+            <Menu mnemonicParsing="false" text="Match">
+               <MenuItem style="-fx-font-size: 18" text="Select Match           F3" onAction="#selectMatches"  />
+               <MenuItem style="-fx-font-size: 18" text="Transaction            F4" />
+            </Menu>
+
+            <Menu mnemonicParsing="false" text="Results">
+               <MenuItem style="-fx-font-size: 18" text="Declare            F5" onAction="#declaration"/>
+               <MenuItem style="-fx-font-size: 18" text="Connect           F6" />
+            </Menu>
+
+            <Menu text="Settling"  mnemonicParsing="false">
+               <MenuItem text="Settling Transaction           F11" style=" -fx-font-size: 18"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+               <MenuItem style="-fx-font-size: 18" text="Transaction History" />
+               <MenuItem style="-fx-font-size: 18" text="Individual Report" />
+               <MenuItem style="-fx-font-size: 18" text="Fency Individual Report" />
+               <MenuItem style="-fx-font-size: 18" text="Session Individual Report" />
+               <Menu style="-fx-font-size: 18" text="Money Report">
+
+               </Menu>
+               <MenuItem style="-fx-font-size: 18" text="Settling Report" />
+               <Menu style="-fx-font-size: 18" text="Before Declaration">
+
+               </Menu>
+            </Menu>
+
+            <Menu mnemonicParsing="false" text="Tools">
+               <MenuItem style="-fx-font-size: 18" text="Calculator" />
+               <!--<SeparatorMenuItem />-->
+               <MenuItem style="-fx-font-size: 18" text="Backup" />
+               <!--<SeparatorMenuItem />-->
+               <MenuItem style="-fx-font-size: 18" text="Restore" />
+            </Menu>
+
+            <Menu text="Settings">
+               <Menu style="-fx-font-size: 18" text="Display Format" />
+            </Menu>
+            <Menu text="Sessions" />
+
+         </menus>
+      </MenuBar>
+   </top>
+
+   <center>
+   </center>
+
+   <bottom>
+      <HBox alignment="CENTER" spacing="30.0" style="-fx-background-color: #161616">
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <Label text="Copyright" textFill="WHITE">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <MaterialIconView fill="WHITE" glyphName="COPYRIGHT" size="20.0" />
+               <Label text="2018" textFill="WHITE">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+      
+                  <Label alignment="CENTER" style="-fx-text-fill: white" text="Sovimal Software Solutions">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+            </children>
+            <opaqueInsets>
+               <Insets left="10.0" right="10.0" />
+            </opaqueInsets>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <MaterialDesignIconView fill="WHITE" glyphName="PHONE" size="20.0" />
+               <Label alignment="CENTER" text="+91 8421305914, 9637788736" textFill="WHITE">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <MaterialDesignIconView fill="WHITE" glyphName="EMAIL" size="20.0" />
+               <Label alignment="CENTER" text="contactus@sovimal.com" textFill="WHITE">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <MaterialDesignIconView fill="WHITE" glyphName="WEB" size="20.0" />
+               <Hyperlink alignment="CENTER" ellipsisString="" focusTraversable="false"
+                          text="www.sovimal.com" textFill="#fffbfb" onAction="#openHyperLink">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Hyperlink>
+            </children>
+         </HBox>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+
+      </HBox>
+   </bottom>
+
+</BorderPane>

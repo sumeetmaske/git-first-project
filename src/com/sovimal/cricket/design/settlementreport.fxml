@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" style="-fx-background-color: #FFA07A;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="TOP_RIGHT" spacing="150.0">
+         <children>
+            <JFXButton alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY">
+               <graphic>
+                  <MaterialDesignIconView glyphName="CLOSE" size="25.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label text="Settlement Report">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <BorderPane>
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" style="-fx-background-color: #0096c9;">
+                     <children>
+                        <Label text="Debit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView>
+                     <columns>
+                        <TableColumn prefWidth="200.0" text="Party" />
+                        <TableColumn prefWidth="150.0" text="Amount" />
+                     </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" spacing="150.0" style="-fx-background-color: #0096c0;">
+                     <children>
+                        <Label text="Total" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="0.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" style="-fx-background-color: #0096c9;">
+                     <children>
+                        <Label text="Credit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView>
+                     <columns>
+                        <TableColumn prefWidth="200.0" text="Party" />
+                        <TableColumn prefWidth="150.0" text="Amount" />
+                     </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" spacing="150.0" style="-fx-background-color: #0096c0;">
+                     <children>
+                        <Label text="Total" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="0.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" spacing="50.0" style="-fx-background-color: #434343;">
+                     <children>
+                        <Label text="Total" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="0.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" style="-fx-background-color: #0096c9;">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PRINT" size="30.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</VBox>

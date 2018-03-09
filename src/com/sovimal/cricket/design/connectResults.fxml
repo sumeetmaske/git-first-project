@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" style="-fx-background-color: lightsalmon;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="TOP_RIGHT">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY">
+               <graphic>
+                  <MaterialDesignIconView glyphName="CLOSE" size="25.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Label text="Connect Results">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <BorderPane>
+         <left>
+            <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" style="-fx-background-color: Slategray;">
+                           <children>
+                              <Label text="Matches" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <TableView prefHeight="200.0">
+                          <columns>
+                            <TableColumn prefWidth="150.0" text="Match Date" />
+                            <TableColumn prefWidth="150.0" text="Name" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" style="-fx-background-color: Slategray;">
+                           <children>
+                              <Label text="Fencies" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <TableView prefHeight="200.0">
+                           <columns>
+                              <TableColumn prefWidth="150.0" text="Fency Date" />
+                              <TableColumn prefWidth="150.0" text="Name" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER" style="-fx-background-color: Slategray;">
+                           <children>
+                              <Label text="Sessions" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TableView prefHeight="200.0">
+                     <columns>
+                        <TableColumn prefWidth="150.0" text="Session Date" />
+                        <TableColumn prefWidth="150.0" text="Name" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" style="-fx-background-color: #434343;">
+                     <children>
+                        <Label text="Transactions" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

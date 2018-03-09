@@ -1,0 +1,22 @@
+#img{
+    -fx-opacity: 0.2;
+    -fx-background-color: black;
+    -fx-animated: true;
+}
+#menubar{
+    -fx-background-color: lightsalmon;
+    -fx-alignment: center-left;
+
+    }
+.menu .label
+{
+    -fx-text-fill: #161616;
+    -fx-font-family:Berlin Sans FB Demi;
+    -fx-font-size: 25;
+}
+#borderpane{
+    -fx-background-color: #161616;
+}
+#newMborder{
+    -fx-background-color: firebrick;
+}
